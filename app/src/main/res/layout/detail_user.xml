@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@color/colorPrimaryDark"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout android:paddingTop="50dp"
+                      android:background="@color/colorPrimary"
+                      android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginTop="75dp">
+
+            <LinearLayout android:gravity="center_horizontal"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+
+                <TextView tools:text="Jane Austen"
+                          android:id="@+id/name"
+                          android:textSize="24sp"
+                          android:textStyle="bold"
+                          android:textColor="@android:color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:transitionName="name"/>
+
+                <TextView tools:text="Flight Attendant"
+                          android:id="@+id/title"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@android:color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+
+                <TextView tools:text="Southwest Airlines"
+                          android:id="@+id/company"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                          android:textColor="@android:color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+
+                <LinearLayout android:gravity="center_vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_margin="10dp">
+
+                    <ImageView android:src="@drawable/ic_phone"
+                               android:padding="5dp"
+                               android:gravity="center"
+                               android:background="@drawable/bg_image"
+                               android:layout_width="35dp"
+                               android:layout_height="wrap_content"/>
+
+                    <LinearLayout android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="5dp">
+
+                        <TextView android:id="@+id/cell"
+                                  android:textColor="@android:color/white"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"/>
+
+                        <TextView android:id="@+id/phone"
+                                  android:textColor="@android:color/white"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:gravity="center_vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_margin="10dp">
+
+                    <ImageView android:src="@drawable/ic_email"
+                               android:padding="5dp"
+                               android:gravity="center"
+                               android:background="@drawable/bg_image"
+                               android:layout_width="35dp"
+                               android:layout_height="wrap_content"/>
+
+                    <LinearLayout android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="5dp">
+
+                        <TextView android:id="@+id/email"
+                                  android:textColor="@android:color/white"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:gravity="center_vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_margin="10dp">
+
+                    <ImageView android:src="@drawable/ic_location"
+                               android:padding="5dp"
+                               android:background="@drawable/bg_image"
+                               android:layout_width="35dp"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="top"/>
+
+                    <LinearLayout android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="5dp">
+
+                        <TextView android:id="@+id/street"
+                                  android:textColor="@android:color/white"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"/>
+
+                        <TextView android:id="@+id/city_state_zip"
+                                  android:textColor="@android:color/white"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"/>
+
+                        <ImageView android:id="@+id/map"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="150dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView android:id="@+id/avatar"
+                   android:layout_width="125dp"
+                   android:layout_height="125dp"
+                   android:layout_centerHorizontal="true"
+                   android:transitionName="avatar"/>
+
+    </RelativeLayout>
+
+</ScrollView>

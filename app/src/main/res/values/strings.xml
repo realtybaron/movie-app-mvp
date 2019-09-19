@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Random Users</string>
+    <string name="google_map_url">https://maps.googleapis.com/maps/api/staticmap?center=%1$s&amp;zoom=13&amp;size=600x300&amp;maptype=roadmap&amp;markers=%2$s&amp;key=AIzaSyDFll4XzMYVuKrVVA3_6jkOdaiRrovstE8</string>
+</resources>
